@@ -3,25 +3,17 @@
 #include <string>
 using namespace std;
 
-#include <utility/Singleton.h>
-using namespace yazi::utility;
-
+#include <frame/Server.h>
 #include <rpc/FunctionHandler.h>
 
 namespace yazi {
 namespace rpc {
 
-class Server
+class Server : public yazi::frame::Server
 {
 public:
     Server();
     ~Server();
-
-    void listen(const string & ip, int port);
-    void start();
-    void set_threads(int threads);
-    void set_connects(int connects);
-    void set_wait_time(int wait_time);
 
     template <typename F>
     void bind(const string & name, F func)
@@ -35,12 +27,6 @@ public:
     }
 
 private:
-    string m_ip;
-    int m_port;
-    int m_threads;
-    int m_connects;
-    int m_wait_time;
-
     FunctionHandler m_handler;
 };
 

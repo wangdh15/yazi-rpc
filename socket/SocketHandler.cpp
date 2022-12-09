@@ -1,19 +1,18 @@
-#include "SocketHandler.h"
-
-#include "Logger.h"
-#include "IniFile.h"
-#include "Singleton.h"
-using namespace yazi::utility;
-
-#include "Task.h"
-#include "AutoLock.h"
-#include "TaskDispatcher.h"
-using namespace yazi::thread;
-
-#include "ServerSocket.h"
+#include <socket/SocketHandler.h>
+#include <socket/ServerSocket.h>
 using namespace yazi::socket;
 
-#include "TaskFactory.h"
+#include <utility/Logger.h>
+#include <utility/IniFile.h>
+#include <utility/Singleton.h>
+using namespace yazi::utility;
+
+#include <thread/Task.h>
+#include <thread/AutoLock.h>
+#include <thread/TaskDispatcher.h>
+using namespace yazi::thread;
+
+#include <task/TaskFactory.h>
 using namespace yazi::task;
 
 SocketHandler::SocketHandler()

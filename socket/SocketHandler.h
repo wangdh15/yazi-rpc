@@ -6,14 +6,14 @@ using std::list;
 #include <string>
 using std::string;
 
-#include "Socket.h"
-#include "EventPoller.h"
+#include <socket/Socket.h>
+#include <socket/EventPoller.h>
 
-#include "ObjectPool.h"
+#include <utility/ObjectPool.h>
 using namespace yazi::utility;
 
-#include "Mutex.h"
-#include "Task.h"
+#include <thread/Mutex.h>
+#include <thread/Task.h>
 using namespace yazi::thread;
 
 namespace yazi {

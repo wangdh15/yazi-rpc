@@ -1,8 +1,8 @@
 #pragma once
 #include <list>
 
-#include "Mutex.h"
-#include "AutoLock.h"
+#include <thread/Mutex.h>
+#include <thread/AutoLock.h>
 
 using namespace yazi::thread;
 

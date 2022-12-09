@@ -1,5 +1,4 @@
-#include "AutoLock.h"
-
+#include <thread/AutoLock.h>
 using namespace yazi::thread;
 
 AutoLock::AutoLock(Mutex* mutex)

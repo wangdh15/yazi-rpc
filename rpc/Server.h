@@ -3,10 +3,10 @@
 #include <string>
 using namespace std;
 
-#include "Singleton.h"
+#include <utility/Singleton.h>
 using namespace yazi::utility;
 
-#include "FunctionHandler.h"
+#include <rpc/FunctionHandler.h>
 
 namespace yazi {
 namespace rpc {

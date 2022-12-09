@@ -1,10 +1,11 @@
-#include "Logger.h"
+#include <utility/Logger.h>
+using namespace yazi::utility;
+
 #include <time.h>
 #include <stdarg.h>
 #include <string.h>
 #include <errno.h>
 #include <stdexcept>
-using namespace yazi::utility;
 
 const char* Logger::s_level[LEVEL_COUNT] = 
 {

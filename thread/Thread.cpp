@@ -1,5 +1,5 @@
-#include "Thread.h"
-#include "AutoLock.h"
+#include <thread/Thread.h>
+#include <thread/AutoLock.h>
 using namespace yazi::thread;
 
 Thread::Thread() : m_tid(0), m_task(NULL)

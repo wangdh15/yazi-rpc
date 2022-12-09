@@ -1,17 +1,17 @@
-#include "WorkTask.h"
+#include <task/WorkTask.h>
 using namespace yazi::task;
 
-#include "Logger.h"
-#include "Singleton.h"
+#include <utility/Logger.h>
+#include <utility/Singleton.h>
 using namespace yazi::utility;
 
-#include "SocketHandler.h"
+#include <socket/SocketHandler.h>
 using namespace yazi::socket;
 
-#include "Server.h"
+#include <rpc/Server.h>
 using namespace yazi::rpc;
 
-#include "DataStream.h"
+#include <serialize/DataStream.h>
 using namespace yazi::serialize;
 
 #include <sstream>

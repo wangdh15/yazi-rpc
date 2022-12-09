@@ -5,10 +5,10 @@
 #include <cstring>
 using namespace std;
 
-#include "ClientSocket.h"
+#include <socket/ClientSocket.h>
 using namespace yazi::socket;
 
-#include "DataStream.h"
+#include <serialize/DataStream.h>
 using namespace yazi::serialize;
 
 namespace yazi {

@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-#include "Server.h"
+#include <rpc/Server.h>
 using namespace yazi::rpc;
 
 string hello(const string & name)

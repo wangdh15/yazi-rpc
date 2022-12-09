@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "Client.h"
+#include <rpc/Client.h>
 using namespace yazi::rpc;
 
 class Request : public Serializable

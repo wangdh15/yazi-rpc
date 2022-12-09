@@ -1,5 +1,5 @@
-#include "Task.h"
-#include "AutoLock.h"
+#include <thread/Task.h>
+#include <thread/AutoLock.h>
 
 using namespace yazi::thread;
 

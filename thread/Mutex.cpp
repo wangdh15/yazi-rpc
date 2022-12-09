@@ -1,5 +1,4 @@
-#include "Mutex.h"
-
+#include <thread/Mutex.h>
 using namespace yazi::thread;
 
 Mutex::Mutex()

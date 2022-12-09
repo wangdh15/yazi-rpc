@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
-#include "IniFile.h"
 
+#include <utility/IniFile.h>
 using namespace yazi::utility;
 
 Value::Value()

@@ -11,10 +11,8 @@ namespace rpc {
 
 class Server : public yazi::frame::Server
 {
+    friend class Singleton<Server>;
 public:
-    Server();
-    ~Server();
-
     template <typename F>
     void bind(const string & name, F func)
     {
@@ -25,6 +23,10 @@ public:
     {
         m_handler.call(name, in, out);
     }
+
+private:
+    Server();
+    ~Server();
 
 private:
     FunctionHandler m_handler;

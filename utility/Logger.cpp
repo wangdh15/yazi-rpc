@@ -78,7 +78,7 @@ void Logger::log(Level level, const char* file, int line, const char* format, ..
         snprintf(buffer, len + 1, fmt, timestamp, s_level[level], file, line);
         buffer[len] = 0;
         m_fout << buffer;
-        delete buffer;
+        delete []buffer;
         m_len += len;
     }
 
@@ -94,7 +94,7 @@ void Logger::log(Level level, const char* file, int line, const char* format, ..
         va_end(arg_ptr);
         content[len] = 0;
         m_fout << content;
-        delete content;
+        delete []content;
         m_len += len;
     }
 
